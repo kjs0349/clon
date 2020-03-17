@@ -8,6 +8,19 @@
   </head>
   <body>
 
+    <input id="bw" type="button" name="black" value="aa" onclick="
+      if(document.querySelector('#bw').name === 'black'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#bw').name = 'white';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#bw').name = 'black';
+    }
+    ">
+
+
     <h1>Jigle</h1>
       <div id="searchbar">
       <form class="" action="index.html" method="post">
